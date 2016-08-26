@@ -33,7 +33,8 @@ for i ,(img,Type) in enumerate(ActualImages):
 		if len(Type)==0:
 			Type='jpg'
 		path=str(i)+"."+Type
-		urllib.request.urlretrieve(img, "pictures/"+path)
+		print("Wait, Downloading..."+str(i))
+		urllib.request.urlretrieve(img, "ho/"+path)
 	except Exception as e:
 		print(e)
 		input(img)
